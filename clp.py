@@ -44,7 +44,7 @@ for i in images:
         }
     )
 
-data = sorted(data, key=lambda x: x[1][0], reverse=True)
+data = sorted(data, key=lambda x: x["cosine"][0], reverse=True)
 
 for i in data:
     print(i)
